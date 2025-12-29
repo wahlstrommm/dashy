@@ -1,47 +1,85 @@
----
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
+  title: Homelab
+  description: Snabba länkar, kommandon och snippets
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
+    - title: GitHub
+      path: https://github.com/wahlstrommm
+    - title: Netlify
+      path: https://app.netlify.com/
 
-# Optional app settings and configuration
 appConfig:
-  theme: colorful
+  theme: one-dark
+  layout: auto
+  iconSize: medium
+  language: sv
+  statusCheck: false
 
-# Main content - An array of sections, each containing an array of items
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: Favorit-länkar
+    icon: fas fa-star
+    items:
+      - title: Gmail
+        icon: fas fa-envelope
+        url: https://mail.google.com/
+      - title: GitHub
+        icon: fab fa-github
+        url: https://github.com/
+      - title: ChatGPT
+        icon: fas fa-robot
+        url: https://chat.openai.com/
+
+  - name: Homelab / Lokala tjänster
+    icon: fas fa-network-wired
+    items:
+      - title: Router
+        icon: fas fa-wifi
+        url: http://192.168.1.1
+      - title: NAS
+        icon: fas fa-hdd
+        url: http://192.168.1.10
+      - title: Home Assistant
+        icon: fas fa-home
+        url: http://192.168.1.20:8123
+      - title: Proxmox
+        icon: fas fa-server
+        url: https://192.168.1.30:8006
+
+  - name: CLI & Snippets
+    icon: fas fa-terminal
+    items:
+      - title: Uppdatera Debian/Ubuntu
+        icon: fas fa-code
+        description: |
+          ```bash
+          sudo apt update && sudo apt upgrade -y
+          ```
+      - title: Docker – lista containers
+        icon: fas fa-box
+        description: |
+          ```bash
+          docker ps -a
+          ```
+      - title: Git – vanlig commit
+        icon: fab fa-git-alt
+        description: |
+          ```bash
+          git add .
+          git commit -m "update"
+          git push
+          ```
+      - title: SSH till server
+        icon: fas fa-key
+        description: |
+          ```bash
+          ssh användarnamn@din-server
+          ```
+
+  - name: Anteckningar
+    icon: fas fa-sticky-note
+    items:
+      - title: Kom ihåg
+        icon: fas fa-list
+        description: |
+          - Portar som är öppna i routern
+          - Viktiga lösenord finns i lösenordshanteraren
+          - TODO: sätt upp backup för NAS
