@@ -229,8 +229,9 @@ sections:
           - Lägga in uptime-checks i Dashy
           - Göra snyggare ikoner (egna PNG/SVG)
 
-
-  sections:
+  # ==========================
+  #  OPEN SOURCE / RESURSER
+  # ==========================
   - name: Open Source Alternatives
     icon: fas fa-box-open
     items:
@@ -384,4 +385,3 @@ sections:
       - title: 3D Book Effect
         icon: fas fa-book
         url: https://scastiel.dev/3dbook
-
