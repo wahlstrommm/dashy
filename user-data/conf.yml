@@ -14,6 +14,36 @@ appConfig:
   language: sv
   statusCheck: false
 
+
+
+sections:
+  - name: Jobb
+    icon: fas fa-briefcase
+    items:
+      - title: Platform Admin
+        icon: fas fa-tools
+        url: https://din-platform-admin-url.example   # BYT TILL RÄTT URL
+
+      - title: Intranätet
+        icon: fas fa-building
+        url: https://ditt-intranet.example           # BYT TILL RÄTT URL
+
+      - title: Bitbucket
+        icon: fab fa-bitbucket
+        url: https://bitbucket.org/
+
+      - title: Openprovider
+        icon: fas fa-globe
+        url: https://cp.openprovider.eu/
+
+      - title: dev.wasabi
+        icon: fas fa-database
+        url: https://dev.wasabi.com/                 # BYT TILL RÄTT URL OM ANNORLUNDA
+
+      - title: Kundzon
+        icon: fas fa-user-circle
+        url: https://din-kundzon.example   
+
 sections:
   - name: Favorit-länkar
     icon: fas fa-star
