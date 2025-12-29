@@ -228,3 +228,160 @@ sections:
           - Egen sektion för monitoring (Grafana, Prometheus?)
           - Lägga in uptime-checks i Dashy
           - Göra snyggare ikoner (egna PNG/SVG)
+
+
+  sections:
+  - name: Open Source Alternatives
+    icon: fas fa-box-open
+    items:
+      - title: Open Source Alternatives
+        icon: fas fa-link
+        url: https://www.opensourcealternatives.to/?ref=dr-pa&utm_medium=dev-resources-website
+      - title: OpenSource Builders
+        icon: fas fa-link
+        url: https://opensource.builders/
+      - title: OpenSource Boilerplates
+        icon: fas fa-link
+        url: https://opensourceboilerplates.com/?ref=dr-pa&utm_medium=dev-resources-website
+      - title: Awesome Tiny JS
+        icon: fab fa-js
+        url: https://github.com/thoughtspile/awesome-tiny-js
+      - title: Awesome Lists (top)
+        icon: fas fa-star
+        url: https://awesomelists.top/#/
+
+  - name: Dev Tools & Utilities
+    icon: fas fa-wrench
+    items:
+      - title: Format JSON Online
+        icon: fas fa-code
+        url: https://formatjsononline.com/
+      - title: Free For Dev
+        icon: fas fa-toolbox
+        url: https://free-for.dev/#/
+      - title: Free Sets
+        icon: fas fa-box
+        url: https://freesets.dev/
+      - title: Free Stuff Dev
+        icon: fas fa-gift
+        url: https://freestuff.dev/
+      - title: LinksHub
+        icon: fas fa-link
+        url: https://www.linkshub.dev/
+      - title: Quickref
+        icon: fas fa-book
+        url: https://quickref.me/
+      - title: DevPages
+        icon: fas fa-file-code
+        url: https://devpages.io/
+      - title: Freeforgeeks
+        icon: fas fa-graduation-cap
+        url: https://freeforgeeks.jpdiaz.dev/#/
+      - title: Goblin Tools
+        icon: fas fa-magic
+        url: https://goblin.tools/
+      - title: Media.io – AI Photo Prompt
+        icon: fas fa-image
+        url: https://www.media.io/image-effects/gemini-ai-photo-prompt-copy.html
+
+  - name: Developer Guides & Skills
+    icon: fas fa-graduation-cap
+    items:
+      - title: Open Source Guide
+        icon: fas fa-book
+        url: https://opensource.guide/
+      - title: HubDev Tools
+        icon: fas fa-toolbox
+        url: https://www.hubdev.tools/
+      - title: DevSheets
+        icon: fas fa-sticky-note
+        url: https://www.devsheets.io/
+      - title: DevSheets – All Sheets
+        icon: fas fa-sticky-note
+        url: https://www.devsheets.io/sheets
+      - title: Web Skills
+        icon: fas fa-project-diagram
+        url: https://andreasbm.github.io/web-skills/
+
+  - name: Cheat Sheets (PHP, jQuery, JS)
+    icon: fas fa-book-open
+    items:
+      - title: PHP Cheatsheet
+        icon: fab fa-php
+        url: https://cheatsheets.zip/php
+      - title: PHP Cheatsheets
+        icon: fab fa-php
+        url: https://phpcheatsheets.com/
+      - title: jQuery Cheatsheet (zip)
+        icon: fas fa-mouse-pointer
+        url: https://cheatsheets.zip/jquery
+      - title: jQuery API
+        icon: fas fa-mouse-pointer
+        url: https://oscarotero.com/jquery
+      - title: OverAPI jQuery
+        icon: fas fa-mouse-pointer
+        url: https://overapi.com/jquery
+      - title: Dev Cheat Sheets (Vercel)
+        icon: fas fa-book
+        url: https://devcheatsheets.vercel.app/
+      - title: CodePo8 – Dear Console
+        icon: fas fa-terminal
+        url: https://codepo8.github.io/dearconsole/
+
+  - name: Project Management & Productivity
+    icon: fas fa-project-diagram
+    items:
+      - title: Personal Management System (Volmarg)
+        icon: fas fa-user-cog
+        url: https://github.com/Volmarg/personal-management-system
+      - title: Dashy Repo
+        icon: fab fa-github
+        url: https://github.com/Lissy93/dashy?tab=readme-ov-file
+      - title: Project Management (DevAslanPHP)
+        icon: fas fa-tasks
+        url: https://devaslanphp.github.io/project-management/#/installation?id=install-helper-on-development
+      - title: Webmin Screenshots
+        icon: fas fa-desktop
+        url: https://webmin.com/screenshots/
+      - title: Leantime (GitHub)
+        icon: fab fa-github
+        url: https://github.com/Leantime/leantime
+      - title: GitHub Lightcrawler
+        icon: fab fa-github
+        url: https://github.com/github/lightcrawler
+
+  - name: Command Line / Automation
+    icon: fas fa-terminal
+    items:
+      - title: CMD Challenge
+        icon: fas fa-terminal
+        url: https://cmdchallenge.com/?ref=dr-pa&utm_medium=dev-resources-website
+      - title: Automation Tools Directory
+        icon: fas fa-robot
+        url: https://www.automationtools.directory/?ref=dr-pa&utm_medium=dev-resources-website
+      - title: AI Prompt Examples
+        icon: fas fa-lightbulb
+        url: https://www.socialchamp.com/blog/ai-prompt-examples/
+      - title: Pastebin Snippet
+        icon: fas fa-file-alt
+        url: https://pastebin.com/paNSrQFn
+      - title: Claude 3.7 Sonnet System Prompt
+        icon: fas fa-brain
+        url: https://github.com/asgeirtj/system_prompts_leaks/blob/main/Anthropic/claude-3.7-sonnet-w-tools.xml
+
+  - name: Frontend / CSS / Animations
+    icon: fab fa-css3-alt
+    items:
+      - title: CSS Snippets
+        icon: fas fa-paint-brush
+        url: https://cssnippets.shefali.dev/
+      - title: Tail Animista (Scale Up)
+        icon: fas fa-play
+        url: https://tail-animista.vercel.app/play/basic/scale-up/scale-up-center
+      - title: Animista (Advanced)
+        icon: fas fa-play-circle
+        url: https://animista.net/play/basic/scale-down/scale-down-ver-center
+      - title: 3D Book Effect
+        icon: fas fa-book
+        url: https://scastiel.dev/3dbook
+
