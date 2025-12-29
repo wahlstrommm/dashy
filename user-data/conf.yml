@@ -1,115 +1,230 @@
 pageInfo:
-  title: Homelab
-  description: Snabba länkar, kommandon och snippets
+  title: Kontrollpanel
+  description: Jobb, dev, homelab och CLI – allt på ett ställe
   navLinks:
     - title: GitHub
       path: https://github.com/wahlstrommm
     - title: Netlify
       path: https://app.netlify.com/
+    - title: Bitbucket
+      path: https://bitbucket.org/
 
 appConfig:
-  theme: one-dark
+  theme: tiger
+  language: sv
   layout: auto
   iconSize: medium
-  language: sv
   statusCheck: false
-
-
+  hideSplashScreen: false
+  startPinned: true
+  searchProvider: duckduckgo
 
 sections:
-  - name: Jobb
+  # ==========================
+  #  JOBB / ADMIN
+  # ==========================
+  - name: Jobb – dagliga system
     icon: fas fa-briefcase
     items:
       - title: Platform Admin
         icon: fas fa-tools
-        url: https://din-platform-admin-url.example   # BYT TILL RÄTT URL
+        url: https://platform-admin.example.com
 
       - title: Intranätet
         icon: fas fa-building
-        url: https://ditt-intranet.example           # BYT TILL RÄTT URL
+        url: https://intranet.example.com
 
+      - title: Kundzon
+        icon: fas fa-user-circle
+        url: https://kundzon.example.com
+
+      - title: Support / Tickets
+        icon: fas fa-life-ring
+        url: https://support.example.com
+
+      - title: Statussida
+        icon: fas fa-traffic-light
+        url: https://status.example.com
+
+  # ==========================
+  #  DEV & REPOS
+  # ==========================
+  - name: Dev & repos
+    icon: fas fa-code
+    items:
       - title: Bitbucket
         icon: fab fa-bitbucket
         url: https://bitbucket.org/
 
+      - title: GitHub (privat)
+        icon: fab fa-github
+        url: https://github.com/
+
+      - title: CI/CD dashboard
+        icon: fas fa-project-diagram
+        url: https://cicd.example.com
+
+      - title: Sentry / Logs
+        icon: fas fa-bug
+        url: https://sentry.example.com
+
+      - title: API-docs
+        icon: fas fa-book
+        url: https://docs.example.com
+
+  # ==========================
+  #  DOMÄNER / HOSTING
+  # ==========================
+  - name: Domäner & hosting
+    icon: fas fa-globe
+    items:
       - title: Openprovider
-        icon: fas fa-globe
+        icon: fas fa-globe-europe
         url: https://cp.openprovider.eu/
+
+      - title: DNS-admin
+        icon: fas fa-server
+        url: https://dns.example.com
 
       - title: dev.wasabi
         icon: fas fa-database
-        url: https://dev.wasabi.com/                 # BYT TILL RÄTT URL OM ANNORLUNDA
+        url: https://console.wasabisys.com/
 
-      - title: Kundzon
-        icon: fas fa-user-circle
-        url: https://din-kundzon.example   
+      - title: Netlify sites
+        icon: fas fa-cloud
+        url: https://app.netlify.com/
 
-sections:
-  - name: Favorit-länkar
-    icon: fas fa-star
-    items:
-      - title: Gmail
-        icon: fas fa-envelope
-        url: https://mail.google.com/
-      - title: GitHub
-        icon: fab fa-github
-        url: https://github.com/
-      - title: ChatGPT
-        icon: fas fa-robot
-        url: https://chat.openai.com/
+      - title: CDN / Edge
+        icon: fas fa-cloud-upload-alt
+        url: https://cdn.example.com
 
-  - name: Homelab / Lokala tjänster
+  # ==========================
+  #  HOMELAB / PERSONLIGT
+  # ==========================
+  - name: Homelab
     icon: fas fa-network-wired
     items:
       - title: Router
         icon: fas fa-wifi
         url: http://192.168.1.1
+
       - title: NAS
         icon: fas fa-hdd
         url: http://192.168.1.10
+
       - title: Home Assistant
         icon: fas fa-home
         url: http://192.168.1.20:8123
+
       - title: Proxmox
         icon: fas fa-server
         url: https://192.168.1.30:8006
 
-  - name: CLI & Snippets
+      - title: Media / Plex
+        icon: fas fa-film
+        url: http://192.168.1.40:32400
+
+  # ==========================
+  #  VERKTYG & QUICK LINKS
+  # ==========================
+  - name: Verktyg & quick links
+    icon: fas fa-tools
+    items:
+      - title: ChatGPT
+        icon: fas fa-robot
+        url: https://chat.openai.com/
+
+      - title: Cron / tidszoner
+        icon: fas fa-clock
+        url: https://crontab.guru/
+
+      - title: Regex tester
+        icon: fas fa-highlighter
+        url: https://regex101.com/
+
+      - title: JSON formatter
+        icon: fas fa-code
+        url: https://jsonformatter.org/
+
+      - title: PNG ↔ SVG / ikoner
+        icon: fas fa-icons
+        url: https://www.svgrepo.com/
+
+  # ==========================
+  #  CLI & SNIPPETS
+  # ==========================
+  - name: CLI & snippets
     icon: fas fa-terminal
     items:
-      - title: Uppdatera Debian/Ubuntu
-        icon: fas fa-code
+      - title: Git – standardflöde
+        icon: fab fa-git-alt
         description: |
           ```bash
-          sudo apt update && sudo apt upgrade -y
+          git status
+          git add .
+          git commit -m "update"
+          git push
           ```
-      - title: Docker – lista containers
+
+      - title: SSH – jobbserver
+        icon: fas fa-key
+        description: |
+          ```bash
+          ssh user@jobb-server.example.com
+          ```
+
+      - title: SSH – homelab
+        icon: fas fa-key
+        description: |
+          ```bash
+          ssh homelab@192.168.1.50
+          ```
+
+      - title: Docker – kolla containers
         icon: fas fa-box
         description: |
           ```bash
           docker ps -a
           ```
-      - title: Git – vanlig commit
-        icon: fab fa-git-alt
+
+      - title: Uppdatera Debian/Ubuntu
+        icon: fas fa-sync
         description: |
           ```bash
-          git add .
-          git commit -m "update"
-          git push
-          ```
-      - title: SSH till server
-        icon: fas fa-key
-        description: |
-          ```bash
-          ssh användarnamn@din-server
+          sudo apt update && sudo apt upgrade -y
           ```
 
+      - title: Tail logs
+        icon: fas fa-scroll
+        description: |
+          ```bash
+          tail -f /var/log/syslog
+          ```
+
+  # ==========================
+  #  ANTECKNINGAR
+  # ==========================
   - name: Anteckningar
     icon: fas fa-sticky-note
     items:
-      - title: Kom ihåg
-        icon: fas fa-list
+      - title: Kom ihåg – jobb
+        icon: fas fa-clipboard-list
         description: |
-          - Portar som är öppna i routern
-          - Viktiga lösenord finns i lösenordshanteraren
-          - TODO: sätt upp backup för NAS
+          - Viktiga kundsystem:
+            - Platform Admin, Kundzon, Intranät
+          - Kolla alltid status-sidan vid incidenter
+          - Lösenord finns i lösenordshanteraren 🔑
+
+      - title: Kom ihåg – homelab
+        icon: fas fa-server
+        description: |
+          - Ta snapshot på VMer innan större uppdateringar
+          - Kör backup till NAS varje natt
+          - Dokumentera ändringar i Proxmox / Home Assistant
+
+      - title: Idéer / TODO
+        icon: fas fa-lightbulb
+        description: |
+          - Egen sektion för monitoring (Grafana, Prometheus?)
+          - Lägga in uptime-checks i Dashy
+          - Göra snyggare ikoner (egna PNG/SVG)
